@@ -1,46 +1,45 @@
 ﻿$def with(*name)
 <p>hello ,$:name[0]</p>
-<p>then $:name[1]</p>
 <form name="main" id="main" method ="post">
 	<table>
 	<tr>
 		<td><label for="tno">教师号</label></td>
-		<td><input type="text" name="tno" ></td>
+		<td><input type="text" name="tno" value="$:name[1][0][0]"></td>
 		<td><input type="submit" value="提交"></td>
 	</tr>
 	<tr>
 		<td><label for="tname">教师姓名</label></td>
-		<td><input type="text" name="tname" ></td>
+		<td><input type="text" name="tname" value="$:name[1][0][1]"></td>
 		<td></td>
 	</tr>
 	<tr>
 		<td><label for="tzhicheng">职称</label></td>
-		<td><input type="text" name="tzhicheng" ></td>
+		<td><input type="text" name="tzhicheng" value="$:name[1][0][2]"></td>
 		<td></td>
 	</tr>
 	<tr>
 		<td><label for="txueyuan">学院</label></td>
-		<td><input type="text" name="txueyuan" ></td>
+		<td><input type="text" name="txueyuan" value="$:name[1][0][3]"></td>
 		<td></td>
 	</tr>
 	<tr>
 		<td><label for="tphone">手机</label></td>
-		<td><input type="text" name="tphone" ></td>
+		<td><input type="text" name="tphone" value="$:name[1][0][4]"></td>
 		<td></td>
 	</tr>
 	<tr>
 		<td><label for="tbangongshi">办公室</label>
-		<td><input type="text" name="tbangongshi" ></td>
+		<td><input type="text" name="tbangongshi" value="$:name[1][0][5]"></td>
 		<td></td>
 	</tr>
 	<tr>
 		<td><label for="temail">电子邮箱</label></td>
-		<td><input type="text" name="temail" ></td>
+		<td><input type="text" name="temail" value="$:name[1][0][6]"></td>
 		<td>
-		<select id="menu" name="menu" value="select">
-			<option value="select" >查询</option>
+			<select id="menu" name="menu" value="select">
+				<option value="select" >查询</option>
 				<option value="update" >修改</option>
-				<option value="drop" >删除</option>	
+				<option value="delete" >删除</option>	
 				<option value="insert" >插入</option>
 			</select>
 		</td>
